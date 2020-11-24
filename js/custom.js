@@ -106,4 +106,22 @@ var wall = new Freewall("#freewall");
 			// for scroll bar appear;
 			$(window).trigger("resize");
 
+			var getVisitorName = $('.visitor').text().split('').length
+			var getHereText = $('.hero-text')
+			var getWelcomeText = $('.welcome-text').find('li')
+
+			//If visitor name is long
+			if(getVisitorName > 6 ) {
+				getHereText.style.fontSize = '10px'
+			}
+			setTimeout(function(){
+				for(var i = 0; getWelcomeText.length > i; i++){
+					(function(i){
+						setTimeout(function(){
+							 getWelcomeText[i].classList.add('fadeIn');
+						}, 1500*i);
+					})(i);
+				}
+			}, 2000)	
+
 })(jQuery);;
