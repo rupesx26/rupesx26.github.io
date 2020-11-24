@@ -1534,3 +1534,51 @@ section {
 .btn-theme:after {
   background-color: #333333;
 }
+
+.mybio h1{
+  font-family: 'Kanit', sans-serif;
+
+}
+.mybio .container {
+  position: relative;
+}
+.mybio .row {
+  display: flex;
+}
+.mybio #hero .container {
+  height: 100vh;
+}
+
+.mybio #hero h1 {
+  font-size: 3em;
+}
+
+.mybio #hero .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: inherit;
+}
+.mybio .welcome-text li {
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, 0, 14);
+  text-align: center;
+}
+
+.mybio .welcome-text li.fadeIn {
+  opacity: 1;  
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: all .5s ease-in;
+
+}
+
+
+/* .mybio {
+  .container {
+    position: relative;
+  }
+  .row {
+    display: flex;
+  }
+} */
