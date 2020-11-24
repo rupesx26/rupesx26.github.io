@@ -1548,7 +1548,10 @@ section {
 .mybio #hero .container {
   height: 100vh;
 }
-.mybio #hero .container, #about .container {
+.fold .container {
+  padding: 25px 0;
+}
+.mybio #hero .container{
   height: 100vh;
 }
 
@@ -1567,6 +1570,7 @@ section {
   opacity: 0;
   transform: matrix(1, 0, 0, 1, 0, 14);
   text-align: center;
+  margin-top: 20px;
 }
 
 .mybio .welcome-text li.fadeIn {
@@ -1576,7 +1580,14 @@ section {
 
 }
 
-
+.bgColorChanger {
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 /* .mybio {
   .container {
     position: relative;
@@ -1585,3 +1596,43 @@ section {
     display: flex;
   }
 } */
+
+.animate-me {
+  -webkit-animation: bgcolorchange 20s infinite 20s; /* Chrome, Safari, Opera */ 
+  animation: 30s infinite bgcolorchange;
+}
+@keyframes bgcolorchange {
+  0% {
+    background-color: #FEEDEC;
+  }
+  5% {
+    background-color: #FEF5EC;
+  }
+  20% {
+    background-color:#FCDED9;
+  }
+  30% {
+    background-color: #EDFDFC;
+  }
+  40% {
+    background-color: #FEECF7;
+  }
+  50% {
+    background-color: #EBEFFE;
+  }
+  60% {
+    background-color: #e1faf0;
+  }
+  70% {
+    background-color: #fddefb;
+  }
+  80% {
+    background-color: #efddff;
+  }
+  90% {
+    background-color: #fefaeb;
+  }
+  100% {
+    background-color: #dae9ff;
+  }
+}
