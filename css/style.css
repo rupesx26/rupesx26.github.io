@@ -1636,3 +1636,12 @@ section {
     background-color: #dae9ff;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .img-holder {
+    display: block!important;
+    position: relative!important;
+    height: 300px;
+    filter: grayscale(10%)!important;
+  }
+}
